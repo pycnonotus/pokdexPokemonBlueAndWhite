@@ -10,7 +10,7 @@ export class HeaderComponent implements OnInit {
   constructor(public pokemonData: PokemonDataService) {}
 
   ngOnInit(): void {}
-
+  //TODO: fix type
   filterSearch(name: any): void {
     console.log(name.target.value);
     this.pokemonData.filterPokedex(name.target.value);

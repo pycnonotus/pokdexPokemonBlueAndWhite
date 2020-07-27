@@ -4,7 +4,7 @@ export class PokeData {
   id: number;
   name: string;
   hebrewName: string;
-  type: string;
+  type: string[];
   ev: string;
   catchRate: string;
   happiness: string;

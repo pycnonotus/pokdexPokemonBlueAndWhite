@@ -1,1 +1,14 @@
-<p>pokemon-info-list works!</p>
+<div *ngIf="pokemonData.pokedexFiltered.length === 0">
+  No pokemon was found
+</div>
+<div *ngIf="pokemonData.pokedexFiltered.length === 1">
+  <app-pokemon-item [pokemon]="pokemonData.pokedexFiltered[0]">
+  </app-pokemon-item>
+</div>
+<div *ngIf="pokemonData.pokedexFiltered.length > 1">
+  <app-pokemon-item-title
+    *ngFor="let p of pokemonData.pokedexFiltered"
+    [pokemon]="p"
+  >
+  </app-pokemon-item-title>
+</div>
