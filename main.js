@@ -6,16 +6,17 @@ const {
 function createWindow() {
   // Create the browser window.
   const win = new BrowserWindow({
-    width: 800,
+    width: 400,
     height: 600,
     webPreferences: {
       nodeIntegration: true
-    }
+    },
+
   })
 
   // and load the index.html of the app.
-  win.loadFile('./dist/index.html')
-
+  win.loadFile('./dist/angular-electron/index.html')
+  win.setTitle("tres");
   // Open the DevTools.
   win.webContents.openDevTools()
 }

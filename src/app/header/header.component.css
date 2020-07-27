@@ -1,0 +1,15 @@
+div {
+  background-color: #E6271C;
+  padding: 8px 8px;
+  text-align: center;
+  border-bottom: 1px solid #ccc;
+}
+
+input {
+  width: 60%;
+  outline: none;
+}
+
+label {
+  margin: 5px 20px;
+}

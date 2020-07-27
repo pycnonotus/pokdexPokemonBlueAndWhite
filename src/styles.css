@@ -1,1 +1,22 @@
 /* You can add global styles to this file, and also import other style files */
+body,
+html {
+  background-color: white;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+input {
+  border: 1px solid #cccccc;
+  padding: 5px 5px;
+  border-radius: 15px;
+
+}
+
+input:active,
+input:focus,
+input:selected,
+input:hover {
+  outline: 7px solid rgba(255, 255, 255, 0.2);
+
+}
